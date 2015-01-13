@@ -33,9 +33,6 @@
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
         <script>
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-            
             Zepto(function($){
                 $('a').on('click', function(){
                     if($(this).attr("id") == "to-up") {
@@ -47,11 +44,6 @@
                     }
                 });
             })
-            
-            try {
-                var pageTracker = _gat._getTracker("UA-40936372-1");
-                pageTracker._trackPageview();
-            } catch(err) {}
         </script>
     </body>
 </html>
